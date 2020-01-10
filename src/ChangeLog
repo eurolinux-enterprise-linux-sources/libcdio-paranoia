@@ -1,0 +1,170 @@
+2012-10-27  R. Bernstein <rocky@gnu.org>
+
+	* INSTALL, NEWS: Get ready for release 10.2+0.90
+
+2012-10-27  R. Bernstein <rocky@gnu.org>
+
+	* doc/doxygen/Doxyfile.in, lib/paranoia/paranoia.c,
+	make-check-filter.rb: Doxygen fixes.
+
+2012-10-21  R. Bernstein <rocky@gnu.org>
+
+	* Makefile.am, configure.ac, example/Makefile.am,
+	example/paranoia.c, example/paranoia2.c, make-check-filter.rb,
+	src/Makefile.am, src/cd-paranoia.c, src/header.c, src/report.c,
+	test/testparanoia.c: cdio/*.h -> cdio/paranoia/. Add Makefile
+	check-short change version number.
+
+2012-03-18  R. Bernstein <rocky@gnu.org>
+
+	* include/cdio/paranoia/cdda.h, include/cdio/paranoia/paranoia.h,
+	test/check_paranoia.sh.in: Make "make distcheck" work again. Remove
+	leading underscores in C preprocessor #define's as per CERT Secure
+	coding recommendations.
+
+2012-03-06  R. Bernstein <rocky@gnu.org>
+
+	* example/C++/paranoia.cpp, example/C++/paranoia2.cpp,
+	example/paranoia.c, example/paranoia2.c: Merge in a couple of
+	patches to headers in some example programs.
+
+2012-02-20  R. Bernstein <rocky@gnu.org>
+
+	* lib/paranoia/paranoia.c: Little typo
+
+2012-02-19  rocky <rocky@gnu.org>
+
+	* doc/Makefile.am, example/C++/Makefile.am, src/Makefile.am,
+	test/Makefile.am: Make "make dist" work.
+
+2012-02-19  rocky <rocky@gnu.org>
+
+	* example/C++/paranoia.cpp, lib/cdda_interface/Makefile.am,
+	lib/cdda_interface/common_interface.c,
+	lib/cdda_interface/drive_exceptions.c,
+	lib/cdda_interface/drive_exceptions.h,
+	lib/cdda_interface/interface.c, lib/cdda_interface/scan_devices.c,
+	lib/cdda_interface/scsi_interface.c, lib/cdda_interface/smallft.c,
+	lib/cdda_interface/smallft.h, lib/cdda_interface/test_interface.c,
+	lib/cdda_interface/toc.c, lib/cdda_interface/utils.c,
+	lib/cdda_interface/utils.h, lib/paranoia/gap.c, lib/paranoia/gap.h,
+	lib/paranoia/isort.c, lib/paranoia/overlap.c,
+	lib/paranoia/overlap.h, lib/paranoia/p_block.h,
+	lib/paranoia/paranoia.c, src/cd-paranoia.c: Reinstate GPL v2+
+	copying.
+
+2012-02-19  rocky <rocky@gnu.org>
+
+	* configure.ac, example/C++/.gitignore, example/C++/Makefile.am,
+	example/C++/paranoia.cpp, example/C++/paranoia2.cpp,
+	example/Makefile.am: Add C++ examples.
+
+2012-02-19  rocky <rocky@gnu.org>
+
+	* example/Makefile.am, example/paranoia.c, src/cd-paranoia.c: 
+	cd-paranoia.c: Prevent a failure of "make check" when stderr is not
+	a tty. Patch from Debian Distribution and N. Boullis. Makefile.am:
+	typo. paranoia.c: bail when getting no cd drives.
+
+2011-11-06  rocky <rocky@gnu.org>
+
+	* doc/doxygen/Doxyfile.in: First working Doxyfile
+
+2011-11-06  rocky <rocky@gnu.org>
+
+	* doc/doxygen/Doxyfile.in, include/cdio/paranoia/version.h.in: Set
+	autoconf version numbers correct and get in version.h and Doxygen
+
+2011-11-06  rocky <rocky@gnu.org>
+
+	* configure.ac, doc/doxygen/Doxyfile.in: Fix up paranoia version
+	string.
+
+2011-11-06  rocky <rocky@gnu.org>
+
+	* doc/en/cd-paranoia.1.in, example/Makefile.am,
+	include/cdio/paranoia/cdda.h, include/cdio/paranoia/paranoia.h,
+	lib/cdda_interface/Makefile.am,
+	lib/cdda_interface/common_interface.h,
+	lib/cdda_interface/interface.c,
+	lib/cdda_interface/libcdio_cdda.sym, lib/paranoia/p_block.c,
+	lib/paranoia/p_block.h, lib/paranoia/paranoia.c,
+	libcdio_cdda.pc.in, libcdio_paranoia.pc.in, src/Makefile.am,
+	test/Makefile.am: Revert branch merge. I need to understand git
+	better
+
+2011-11-06  rocky <rocky@gnu.org>
+
+	* doc/doxygen/Doxyfile.in: Update doxygen
+
+2011-11-06  rocky <rocky@gnu.org>
+
+	Merge branch 'code-from-10.2' of
+	github.com:rocky/libcdio-paranoia
+
+2011-11-05  R. Bernstein <rocky@gnu.org>
+
+	* configure.ac: We don't do cdda-player in this project
+
+2011-11-05  R. Bernstein <rocky@gnu.org>
+
+	* configure.ac, lib/cdda_interface/Makefile.am,
+	lib/cdda_interface/cddap_interface.c,
+	lib/cdda_interface/common_interface.h,
+	lib/cdda_interface/interface.c, lib/cdda_interface/low_interface.h,
+	lib/cdda_interface/toc.c, lib/paranoia/Makefile.am,
+	lib/paranoia/p_block.c, test/.gitignore, test/Makefile.am,
+	test/data/.gitignore: Some fixes because code is split off. Some
+	copyright changes. Administrivia.
+
+2011-11-05  R. Bernstein <rocky@gnu.org>
+
+	* configure.ac, doc/en/cd-paranoia.1.in, example/Makefile.am,
+	include/cdio/paranoia/cdda.h, include/cdio/paranoia/paranoia.h,
+	lib/cdda_interface/Makefile.am,
+	lib/cdda_interface/cddap_interface.c,
+	lib/cdda_interface/common_interface.h,
+	lib/cdda_interface/interface.c,
+	lib/cdda_interface/libcdio_cdda.sym,
+	lib/cdda_interface/low_interface.h, lib/cdda_interface/toc.c,
+	lib/paranoia/Makefile.am, lib/paranoia/p_block.c,
+	lib/paranoia/p_block.h, lib/paranoia/paranoia.c,
+	libcdio_cdda.pc.in, libcdio_paranoia.pc.in, src/Makefile.am,
+	test/.gitignore, test/Makefile.am, test/data/.gitignore: Attempt to
+	merge Blake Jone's patches for 10.2.
+
+2011-11-05  R. Bernstein <rocky@gnu.org>
+
+	* .gitignore, example/.gitignore, example/README, m4/.gitignore,
+	test/Makefile.am, test/check_paranoia.sh.in, test/data/.gitignore,
+	test/data/Makefile.am, test/data/cdda.bin, test/data/cdda.cue: All
+	tests now work.
+
+2011-11-05  r <rocky@gnu.org>
+
+	* configure.ac, example/.gitignore,
+	include/cdio/paranoia/.gitignore, lib/cdda_interface/utils.c,
+	lib/paranoia/.gitignore, lib/paranoia/gap.c,
+	lib/paranoia/overlap.c, lib/paranoia/p_block.c,
+	lib/paranoia/p_block.h, lib/paranoia/paranoia.c: Program compiles
+	now. Not all of the tests that should run run though.
+
+2011-11-05  r <rocky@gnu.org>
+
+	* .gitignore, COPYING, INSTALL, NEWS, README, configure.ac,
+	doc/.gitignore, doc/doxygen/.gitignore, doc/doxygen/Doxyfile.in,
+	doc/doxygen/run_doxygen, example/.gitignore, include/.gitignore,
+	include/cdio/.gitignore, include/cdio/Makefile.am,
+	include/cdio/cdda.h, include/cdio/paranoia.h,
+	include/cdio/paranoia/.gitignore,
+	include/cdio/paranoia/Makefile.am, include/cdio/paranoia/cdda.h,
+	include/cdio/paranoia/paranoia.h,
+	include/cdio/paranoia/version.h.in, lib/.gitignore, src/Makefile.am: 
+	autoreconf (or autogen.sh) and configure now don't error out.
+	configure is not quite correct though.
+
+2011-11-05  r <rocky@gnu.org>
+
+	* Initial guess at files to copy over. Expect lots of changes to get
+	this working.
+

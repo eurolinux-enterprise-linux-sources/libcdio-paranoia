@@ -1,0 +1,310 @@
+From 5f8c33d04fcf7b4cede360e79cc3806e9139127f Mon Sep 17 00:00:00 2001
+From: Adrian Reber <adrian@lisas.de>
+Date: Sun, 4 Nov 2012 22:55:53 +0100
+Subject: [PATCH] Fixup license headers (again)
+
+Like said in previous commit, but this time for real:
+
+After the libcdio - libcdio-paranoia split many license headers
+were wrong. The original cdparanoia library is LGPLv2+ and the
+binaries are GPLv2+. This changes all GPLv3 headers from the
+libcdio split back to GPLv2+ and the files in lib/paranoia to
+LGPLv2+.
+---
+ lib/paranoia/gap.c      |   22 +++++++++++-----------
+ lib/paranoia/gap.h      |   22 +++++++++++-----------
+ lib/paranoia/isort.c    |   22 +++++++++++-----------
+ lib/paranoia/isort.h    |   20 ++++++++++----------
+ lib/paranoia/overlap.c  |   22 +++++++++++-----------
+ lib/paranoia/overlap.h  |   22 +++++++++++-----------
+ lib/paranoia/p_block.h  |   20 ++++++++++----------
+ lib/paranoia/paranoia.c |   22 +++++++++++-----------
+ 8 files changed, 86 insertions(+), 86 deletions(-)
+
+diff --git a/lib/paranoia/gap.c b/lib/paranoia/gap.c
+index 1f5f95b..5e83856 100644
+--- a/lib/paranoia/gap.c
++++ b/lib/paranoia/gap.c
+@@ -1,20 +1,20 @@
+ /*
+   Copyright (C) 2004, 2008, 2011 Rocky Bernstein <rocky@gnu.org>
+   Copyright (C) 1998 Monty xiphmont@mit.edu
+-  
+-  This program is free software; you can redistribute it and/or modify
+-  it under the terms of the GNU General Public License as published by
+-  the Free Software Foundation; either version 2 of the License, or
+-  (at your option) any later version.
+ 
+-  This program is distributed in the hope that it will be useful,
++  This library is free software; you can redistribute it and/or
++  modify it under the terms of the GNU Lesser General Public
++  License as published by the Free Software Foundation; either
++  version 2.1 of the License, or (at your option) any later version.
++
++  This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-  GNU General Public License for more details.
++  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++  Lesser General Public License for more details.
+ 
+-  You should have received a copy of the GNU General Public License along
+-  with this program; if not, write to the Free Software Foundation, Inc.,
+-  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
++  You should have received a copy of the GNU Lesser General Public
++  License along with this library; if not, write to the Free Software
++  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+ /***
+  * Gap analysis support code for paranoia
+diff --git a/lib/paranoia/gap.h b/lib/paranoia/gap.h
+index 3185695..1d15f84 100644
+--- a/lib/paranoia/gap.h
++++ b/lib/paranoia/gap.h
+@@ -1,20 +1,20 @@
+ /*
+   Copyright (C) 2004, 2008 Rocky Bernstein <rocky@gnu.org>
+   Copyright (C) 1998 Monty xiphmont@mit.edu
+-  
+-  This program is free software; you can redistribute it and/or modify
+-  it under the terms of the GNU General Public License as published by
+-  the Free Software Foundation; either version 2 of the License, or
+-  (at your option) any later version.
+ 
+-  This program is distributed in the hope that it will be useful,
++  This library is free software; you can redistribute it and/or
++  modify it under the terms of the GNU Lesser General Public
++  License as published by the Free Software Foundation; either
++  version 2.1 of the License, or (at your option) any later version.
++
++  This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-  GNU General Public License for more details.
++  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++  Lesser General Public License for more details.
+ 
+-  You should have received a copy of the GNU General Public License along
+-  with this program; if not, write to the Free Software Foundation, Inc.,
+-  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
++  You should have received a copy of the GNU Lesser General Public
++  License along with this library; if not, write to the Free Software
++  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+ 
+ #ifndef _GAP_H_
+diff --git a/lib/paranoia/isort.c b/lib/paranoia/isort.c
+index b80005b..0825f50 100644
+--- a/lib/paranoia/isort.c
++++ b/lib/paranoia/isort.c
+@@ -1,20 +1,20 @@
+ /*
+   Copyright (C) 2004, 2005, 2008, 2011 Rocky Bernstein <rocky@gnu.org>
+   Copyright (C) 1998 Monty xiphmont@mit.edu
+-  
+-  This program is free software; you can redistribute it and/or modify
+-  it under the terms of the GNU General Public License as published by
+-  the Free Software Foundation; either version 2 of the License, or
+-  (at your option) any later version.
+ 
+-  This program is distributed in the hope that it will be useful,
++  This library is free software; you can redistribute it and/or
++  modify it under the terms of the GNU Lesser General Public
++  License as published by the Free Software Foundation; either
++  version 2.1 of the License, or (at your option) any later version.
++
++  This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-  GNU General Public License for more details.
++  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++  Lesser General Public License for more details.
+ 
+-  You should have received a copy of the GNU General Public License along
+-  with this program; if not, write to the Free Software Foundation, Inc.,
+-  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
++  You should have received a copy of the GNU Lesser General Public
++  License along with this library; if not, write to the Free Software
++  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+ 
+ /* sorted vector abstraction for paranoia */
+diff --git a/lib/paranoia/isort.h b/lib/paranoia/isort.h
+index a1eace5..842260e 100644
+--- a/lib/paranoia/isort.h
++++ b/lib/paranoia/isort.h
+@@ -4,19 +4,19 @@
+   Copyright (C) 2004, 2005, 2008 Rocky Bernstein <rocky@gnu.org>
+   Copyright (C) 1998 Monty xiphmont@mit.edu
+ 
+-  This program is free software; you can redistribute it and/or modify
+-  it under the terms of the GNU General Public License as published by
+-  the Free Software Foundation; either version 2 of the License, or
+-  (at your option) any later version.
++  This library is free software; you can redistribute it and/or
++  modify it under the terms of the GNU Lesser General Public
++  License as published by the Free Software Foundation; either
++  version 2.1 of the License, or (at your option) any later version.
+ 
+-  This program is distributed in the hope that it will be useful,
++  This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-  GNU General Public License for more details.
++  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++  Lesser General Public License for more details.
+ 
+-  You should have received a copy of the GNU General Public License along
+-  with this program; if not, write to the Free Software Foundation, Inc.,
+-  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
++  You should have received a copy of the GNU Lesser General Public
++  License along with this library; if not, write to the Free Software
++  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+ 
+ #ifndef _ISORT_H_
+diff --git a/lib/paranoia/overlap.c b/lib/paranoia/overlap.c
+index 7301e7f..d4e7473 100644
+--- a/lib/paranoia/overlap.c
++++ b/lib/paranoia/overlap.c
+@@ -1,20 +1,20 @@
+ /*
+   Copyright (C) 2004, 2005, 2008, 2011 Rocky Bernstein <rocky@gnu.org>
+   Copyright (C) 1998 Monty xiphmont@mit.edu
+-  
+-  This program is free software; you can redistribute it and/or modify
+-  it under the terms of the GNU General Public License as published by
+-  the Free Software Foundation; either version 2 of the License, or
+-  (at your option) any later version.
+ 
+-  This program is distributed in the hope that it will be useful,
++  This library is free software; you can redistribute it and/or
++  modify it under the terms of the GNU Lesser General Public
++  License as published by the Free Software Foundation; either
++  version 2.1 of the License, or (at your option) any later version.
++
++  This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-  GNU General Public License for more details.
++  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++  Lesser General Public License for more details.
+ 
+-  You should have received a copy of the GNU General Public License along
+-  with this program; if not, write to the Free Software Foundation, Inc.,
+-  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
++  You should have received a copy of the GNU Lesser General Public
++  License along with this library; if not, write to the Free Software
++  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+ 
+ /***
+diff --git a/lib/paranoia/overlap.h b/lib/paranoia/overlap.h
+index e2a3fa8..2760692 100644
+--- a/lib/paranoia/overlap.h
++++ b/lib/paranoia/overlap.h
+@@ -1,20 +1,20 @@
+ /*
+   Copyright (C) 2004, 2008 Rocky Bernstein <rocky@gnu.org>
+   Copyright (C) 1998 Monty xiphmont@mit.edu
+-  
+-  This program is free software; you can redistribute it and/or modify
+-  it under the terms of the GNU General Public License as published by
+-  the Free Software Foundation; either version 2 of the License, or
+-  (at your option) any later version.
+ 
+-  This program is distributed in the hope that it will be useful,
++  This library is free software; you can redistribute it and/or
++  modify it under the terms of the GNU Lesser General Public
++  License as published by the Free Software Foundation; either
++  version 2.1 of the License, or (at your option) any later version.
++
++  This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-  GNU General Public License for more details.
++  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++  Lesser General Public License for more details.
+ 
+-  You should have received a copy of the GNU General Public License along
+-  with this program; if not, write to the Free Software Foundation, Inc.,
+-  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
++  You should have received a copy of the GNU Lesser General Public
++  License along with this library; if not, write to the Free Software
++  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+ 
+ #ifndef _OVERLAP_H_
+diff --git a/lib/paranoia/p_block.h b/lib/paranoia/p_block.h
+index f1e325f..165dae5 100644
+--- a/lib/paranoia/p_block.h
++++ b/lib/paranoia/p_block.h
+@@ -2,19 +2,19 @@
+   Copyright (C) 2004, 2005, 2008 Rocky Bernstein <rocky@gnu.org>
+   Copyright (C) by Monty (xiphmont@mit.edu)
+ 
+-  This program is free software; you can redistribute it and/or modify
+-  it under the terms of the GNU General Public License as published by
+-  the Free Software Foundation; either version 2 of the License, or
+-  (at your option) any later version.
++  This library is free software; you can redistribute it and/or
++  modify it under the terms of the GNU Lesser General Public
++  License as published by the Free Software Foundation; either
++  version 2.1 of the License, or (at your option) any later version.
+ 
+-  This program is distributed in the hope that it will be useful,
++  This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-  GNU General Public License for more details.
++  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++  Lesser General Public License for more details.
+ 
+-  You should have received a copy of the GNU General Public License along
+-  with this program; if not, write to the Free Software Foundation, Inc.,
+-  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
++  You should have received a copy of the GNU Lesser General Public
++  License along with this library; if not, write to the Free Software
++  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+ 
+ #ifndef _P_BLOCK_H_
+diff --git a/lib/paranoia/paranoia.c b/lib/paranoia/paranoia.c
+index 3af7f16..4ecfcdf 100644
+--- a/lib/paranoia/paranoia.c
++++ b/lib/paranoia/paranoia.c
+@@ -1,20 +1,20 @@
+ /*
+   Copyright (C) 2004, 2005, 2006, 2008, 2011 Rocky Bernstein <rocky@gnu.org>
+   Copyright (C) 1998 Monty xiphmont@mit.edu
+-  
+-  This program is free software; you can redistribute it and/or modify
+-  it under the terms of the GNU General Public License as published by
+-  the Free Software Foundation; either version 2 of the License, or
+-  (at your option) any later version.
+ 
+-  This program is distributed in the hope that it will be useful,
++  This library is free software; you can redistribute it and/or
++  modify it under the terms of the GNU Lesser General Public
++  License as published by the Free Software Foundation; either
++  version 2.1 of the License, or (at your option) any later version.
++
++  This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-  GNU General Public License for more details.
++  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++  Lesser General Public License for more details.
+ 
+-  You should have received a copy of the GNU General Public License along
+-  with this program; if not, write to the Free Software Foundation, Inc.,
+-  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
++  You should have received a copy of the GNU Lesser General Public
++  License along with this library; if not, write to the Free Software
++  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+ /***
+  * Toplevel file for the paranoia abstraction over the cdda lib 
+-- 
+1.7.10
+
