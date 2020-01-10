@@ -1,6 +1,6 @@
 Name: libcdio-paranoia
 Version: 10.2+0.90
-Release: 11%{?dist}
+Release: 8%{?dist}
 Summary: CD paranoia on top of libcdio
 Group: System Environment/Libraries
 License: GPLv2+ and LGPLv2+
@@ -104,16 +104,6 @@ chrpath --delete $RPM_BUILD_ROOT%{_libdir}/*.so.*
 
 
 %changelog
-* Fri Feb 21 2014 Frantisek Kluknavsky <fkluknav@redhat.com> - 10.2+0.90-11
-- rebuilt for libcdio-0.92
-- Resolves: rhbz#1065642
-
-* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 10.2+0.90-10
-- Mass rebuild 2014-01-24
-
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 10.2+0.90-9
-- Mass rebuild 2013-12-27
-
 * Wed Jul 31 2013 Frantisek Kluknavsky <fkluknav@redhat.com> - 10.2+0.90-8
 - long name in manual page caused 'whatis' to misbehave
 
